@@ -1,0 +1,26 @@
+import { FC } from 'react';
+import { View, Text, styled, ScrollView } from 'tamagui';
+import { useTranslation } from 'react-i18next';
+
+interface {{pascalCase name}}ScreenProps {
+  // Define props here
+}
+
+export const {{pascalCase name}}Screen: FC<{{pascalCase name}}ScreenProps> = (props) => {
+  const { t } = useTranslation();
+
+  return (
+    <Container>
+      <ScrollView flex={1}>
+        <Text fontSize="$6" fontWeight="bold">
+          {t('screens.{{camelCase name}}.title')}
+        </Text>
+      </ScrollView>
+    </Container>
+  );
+};
+
+const Container = styled(View, {
+  flex: 1,
+  padding: '$4',
+});

@@ -1,0 +1,18 @@
+import { FC } from 'react';
+import { View, Text, styled } from 'tamagui';
+
+interface {{pascalCase name}}Props {
+  // Define props here
+}
+
+export const {{pascalCase name}}: FC<{{pascalCase name}}Props> = (props) => {
+  return (
+    <Container>
+      <Text>{{pascalCase name}} Component</Text>
+    </Container>
+  );
+};
+
+const Container = styled(View, {
+  padding: '$4',
+});
